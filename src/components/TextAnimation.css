@@ -1,0 +1,22 @@
+/* TextAnimation.css */
+.text-animation {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.animated-letter {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
